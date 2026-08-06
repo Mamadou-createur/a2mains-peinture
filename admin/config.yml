@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+locale: "fr"
+
+collections:
+  - name: "galerie"
+    label: "Galerie photos"
+    files:
+      - name: "realisations"
+        label: "Toutes les réalisations"
+        file: "content/gallery.json"
+        format: "json"
+        fields:
+          - {label: "Titre de la galerie", name: "title", widget: "string"}
+          - label: "Photos"
+            name: "items"
+            widget: "list"
+            add_to_top: true
+            summary: "{{fields.title}} — {{fields.category}}"
+            fields:
+              - {label: "Titre", name: "title", widget: "string"}
+              - label: "Catégorie"
+                name: "category"
+                widget: "select"
+                options: ["Intérieur", "Extérieur", "Escaliers", "Papier peint", "Professionnels", "EHPAD / collectivités", "Avant / Après", "Autres"]
+              - {label: "Photo", name: "image", widget: "image"}
+              - {label: "Description", name: "description", widget: "text", required: false}

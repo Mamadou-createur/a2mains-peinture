@@ -105,3 +105,11 @@ dialog img{max-width:90vw;max-height:88vh}
  .mobile-actions a{padding:16px;text-align:center;font-weight:800;background:#171a1b;border-top:1px solid #333}
  .mobile-actions a:last-child{background:var(--orange);color:#111}
 }
+
+.gallery-filters{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 28px}
+.gallery-filters button{border:1px solid #d0cbc4;background:transparent;color:#333;padding:10px 16px;font:inherit;font-size:13px;font-weight:800;cursor:pointer}
+.gallery-filters button.active,.gallery-filters button:hover{background:#111;color:#fff;border-color:#111}
+.gallery-item{position:relative}
+.gallery-caption{position:absolute;left:0;right:0;bottom:0;display:grid;gap:3px;padding:42px 16px 14px;text-align:left;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.86));opacity:0;transition:.3s}
+.gallery-item:hover .gallery-caption,.gallery-item:focus .gallery-caption{opacity:1}
+@media(max-width:640px){.gallery-caption{opacity:1}.gallery-filters button{padding:9px 11px;font-size:11px}}
