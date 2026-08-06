@@ -2,6 +2,26 @@
   "title": "Nos réalisations",
   "items": [
     {
+      "title": "Réalisation",
+      "image": "/assets/uploads/img-20260806-wa0071.jpg",
+      "category": "Avant / Après"
+    },
+    {
+      "title": "Réalisation",
+      "image": "/assets/uploads/img-20260806-wa0062.jpg",
+      "category": "Extérieur"
+    },
+    {
+      "title": "Réalisation",
+      "category": "Intérieur",
+      "image": "/assets/uploads/img-20260806-wa0053.jpg"
+    },
+    {
+      "image": "/assets/uploads/img-20260806-wa0052.jpg",
+      "title": "Réalisation",
+      "category": "Intérieur"
+    },
+    {
       "title": "Réalisation 1",
       "category": "Intérieur",
       "image": "/assets/realisation-01.jpg",
